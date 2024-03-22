@@ -1,0 +1,5 @@
+df_analise_cat_idade = df_principal.groupby('Cat_idade')['Variacao_rs'].sum().reset_index()
+df_analise_cat_idade
+
+fig = px.bar(df_analise_cat_idade, x='Cat_idade', y='Variacao_rs', text='Variacao_rs', title='Variação Reais por Categoria de Idade')
+fig.show()
