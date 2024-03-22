@@ -1,0 +1,2 @@
+fig = px.pie(df_analise_segmento, names='Segmento', values='Variacao_rs', title='Variação Reais por Segmento')
+fig.show()
